@@ -11,7 +11,14 @@
   >
 
   <title>MARSOM</title>
+  
+<link rel="manifest" href="manifest.json">
 
+<meta
+  name="theme-color"
+  content="#078b8f"
+>
+  
   <link
     rel="apple-touch-icon"
     sizes="180x180"
@@ -86,50 +93,44 @@
       font-size: 13px;
     }
 
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  background: white;
+}
+    
   </style>
 
 
-  <script>
+ <script>
 
-    window.addEventListener(
-      "load",
-      function() {
+  window.addEventListener(
+    "load",
+    function() {
 
-        setTimeout(
-          function() {
-
-            window.location.replace(
-              "https://script.google.com/macros/s/AKfycbyqpvgVOVvqljj8wMfXcizoGSXYMUKgXkB61vyf0xIdPxsEKdXE7tojph1EwpAmIocL/exec"
-            );
-
-          },
-          500
+      const frame =
+        document.getElementById(
+          "marsomFrame"
         );
 
-      }
-    );
+      frame.src =
+        "https://script.google.com/macros/s/AKfycbyqpvgVOVvqljj8wMfXcizoGSXYMUKgXkB61vyf0xIdPxsEKdXE7tojph1EwpAmIocL/exec";
 
-  </script>
+    }
+  );
 
+</script>
 </head>
 
 
 <body>
 
-  <div class="opening">
-
-    <img
-      src="https://ozgurserttr-wq.github.io/marsom-assets/marsom-icon.png.png"
-      alt="MARSOM"
-    >
-
-    <h1>MARSOM</h1>
-
-    <p>
-      Yönetim Paneli açılıyor...
-    </p>
-
-  </div>
+  <iframe
+  id="marsomFrame"
+  title="MARSOM">
+</iframe>
 
 </body>
 
