@@ -1,0 +1,23 @@
+{
+  "name": "MARSOM",
+  "short_name": "MARSOM",
+  "description": "Marsom Balık Yetiştiriciliği Takip Sistemi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eef9f8",
+  "theme_color": "#078b8f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "marsom-icon.png.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "marsom-icon.png.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
